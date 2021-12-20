@@ -10,12 +10,13 @@ class Log(metaclass=Singleton):
         CONSTANTS = { 'severity': { 'Trace': 0,
                                     'Debug': 1,
                                     'Info': 2,
-                                    'Warning': 3,
-                                    'Error': 4,
+                                    'Notice': 3,
+                                    'Warning': 4,
                                     'Alert': 5,
-                                    'Critical': 6,
-                                    'Fatal': 7,
-                                    'Emergency': 8 } }
+                                    'Error': 6,
+                                    'Critical': 7,
+                                    'Fatal': 8,
+                                    'Emergency': 9 } }
         
         def __contains__(self, severity_):
             result = None
